@@ -1,0 +1,9 @@
+.subButton{
+    border: 1px solid gray;
+    padding: 4px 25px;
+}
+
+.subButton:hover{
+    background-color: #62d2a2;
+    color: white;
+}

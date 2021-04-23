@@ -1,0 +1,19 @@
+.smBannerPart{
+    position: relative;
+}
+
+.smallBannerContent{
+    position: absolute;
+}
+
+.smallBannerContent h6{
+    color: #62d2a2;
+}
+
+.smText{
+    color: #62d2a2;
+}
+
+.smButton{
+    border: 1px solid black;
+}

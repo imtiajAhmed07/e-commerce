@@ -1,0 +1,19 @@
+.footer{
+    background-color: #151616 ;
+}
+
+li{
+    list-style: none;
+    color: rgb(150, 150, 150);
+    line-height: 30px;
+}
+
+p{
+    color: rgb(150, 150, 150);
+}
+
+.footerLine{
+    width: 100%;
+    height: 1px;
+    background-color: white;
+}

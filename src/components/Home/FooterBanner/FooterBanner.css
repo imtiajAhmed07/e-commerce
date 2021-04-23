@@ -1,0 +1,14 @@
+.footerBannerMain{
+    position: relative;
+}
+
+.footerBannerContent{
+    position: absolute;
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .footerBannerImg {
+      width: 100%;
+  }
+}
