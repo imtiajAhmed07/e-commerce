@@ -1,10 +1,16 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
+import { UserContext } from '../../../App';
 import ProductCard from '../ProductCard/ProductCard';
 
 const Product = () => {
     
     const [product, setProduct] = useState([])
-    console.log(product);
+    const [cart, setCart] = useContext(UserContext)
+    
+    const handleAddToCart = (product) => {
+        const newProduct = [...cart, product];
+        setCart(newProduct);
+    }
 
     const url = `https://nameless-atoll-08724.herokuapp.com/products`
 
@@ -20,7 +26,7 @@ const Product = () => {
             <p className="text-center text-secondary">Mirum est notare quam littera gothica quam nunc putamus parum claram!</p>
             <div className="row">
                 {
-                    product.map(pd => <ProductCard pd={pd}></ProductCard>)
+                    product.map(pd => <ProductCard pd={pd} handleAddToCart={handleAddToCart}></ProductCard>)
                 }
             </div>
         </div>
